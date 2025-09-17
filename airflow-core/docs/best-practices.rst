@@ -633,7 +633,7 @@ want to optimize your Dags there are the following actions you can take:
   execution there are as few potential candidates to run among the tasks, this will likely improve overall
   scheduling performance.
 
-* Make smaller number of Dags per file. While Airflow 2 is optimized for the case of having multiple Dags
+* Make smaller number of Dags per file. While Airflow 3 is optimized for the case of having multiple Dags
   in one file, there are some parts of the system that make it sometimes less performant, or introduce more
   delays than having those Dags split among many files. Just the fact that one file can only be parsed by one
   FileProcessor, makes it less scalable for example. If you have many Dags generated from one file,
